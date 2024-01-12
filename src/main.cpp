@@ -76,7 +76,7 @@ void loop(void)
  String tempStr = String((int)roundedTemp);
 
  tempStr.replace("0", "O");
- if (num2 == -127.00){
+ if (num2 == -127.00 || num2 < -25.00){
    matrix.textFont(Font_4x6);
    matrix.beginText(1, 1, 0xFFFFFF);
    matrix.println("Err");
